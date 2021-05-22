@@ -7,7 +7,6 @@ export default function ShopBasket () {
     const remove = (id) => {
         dispatch(removeBOX(id))
     }
-    localStorage.setItem("box", JSON.stringify(box))
   return(
       <div>
           {

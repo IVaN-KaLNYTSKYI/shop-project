@@ -2,7 +2,7 @@ import {ADD_BOX, REMOVE_BOX, RESET_LOADING, SET_LOADING, SET_PRODUCT} from "../a
 
 const initialState = {
     product: [],
-    box:JSON.parse(localStorage.getItem("box"))||[],
+    box:JSON.parse(localStorage.getItem("state"))||[],
     isLoading: false
 }
 
