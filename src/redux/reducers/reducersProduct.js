@@ -2,7 +2,7 @@ import {ADD_BOX, REMOVE_BOX, RESET_LOADING, SET_LOADING, SET_PRODUCT} from "../a
 
 const initialState = {
     product: [],
-    box:[],
+    box:JSON.parse(localStorage.getItem("box"))||[],
     isLoading: false
 }
 
@@ -30,6 +30,7 @@ export const productReducer = (state = initialState, action) => {
                 return state
             }
             const itemProduct=state.product.find(el=>el.id===payload)
+
             return {
                 ...state,box: [...state.box,itemProduct]
             }
