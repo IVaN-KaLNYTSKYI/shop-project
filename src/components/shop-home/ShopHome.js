@@ -21,8 +21,8 @@ export default function ShopHome() {
     }
     const add = (id) => {
         dispatch(addBOX(id))
-        localStorage.setItem("box", JSON.stringify(box))
     }
+    localStorage.setItem("box", JSON.stringify(box))
     return (
         <div>
             <div>basket:{box.length}</div>
