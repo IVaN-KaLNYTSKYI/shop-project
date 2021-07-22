@@ -12,7 +12,7 @@ function App() {
                 <div className={"header"}>
                     <div><Link to="/">Shop</Link></div>
                     <div className={"box-counter"}>
-                        <Link to="/basket">basket</Link>
+                        <Link to="/basket">basket-2</Link>
                         <div className={"counter"}>{box.length}</div>
                     </div>
                 </div>
